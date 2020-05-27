@@ -1,0 +1,406 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Free Education</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+  <!-- for icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+ <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+ <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+ <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+ <style>
+   /* Make the image fully responsive */
+   .carousel-inner img {
+       width: 100%;
+       height: 400px;
+   }
+   </style>
+</head>
+<body>
+  <nav class="navbar navbar-expand-sm bg-dark navbar-dark">
+    <!-- Brand -->
+    <a class="navbar-brand" href="#">Free Education For All</a>
+
+    <!-- Links -->
+    <ul class="navbar-nav">
+      <li class="nav-item">
+        <a class="nav-link" href="index.html"><b>Home</b></a>
+      </li>
+      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+      <li class="nav-item">
+        <a class="nav-link" href="AboutUs.html" target="_blank"><b>About us</b></a>
+      </li>
+      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+      <!-- Dropdown -->
+      <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown">
+          Choose what you want to learn
+        </a>
+        <div class="dropdown-menu">
+          <a class="dropdown-item" href="Programming Languages/C programming.html" target="_blank">C Programming</a>
+          <a class="dropdown-item" href="Programming Languages/C++ programming.html" target="_blank">C++ Programming</a>
+          <a class="dropdown-item" href="Programming Languages/JAVA.html" target="_blank">Java Programming</a>
+          <a class="dropdown-item" href="Programming Languages/PYTHON.html" target="_blank">Python Programming</a>
+          <a class="dropdown-item" href="Web Technology/HTML.html" target="_blank">HTML</a>
+          <a class="dropdown-item" href="Web Technology/CSS.html" target="_blank">CSS</a>
+          <a class="dropdown-item" href="Web Technology/JS.html" target="_blank">JavaScript</a>
+          <a class="dropdown-item" href="Web Technology/PHP.html" target="_blank">PHP</a>
+          <a class="dropdown-item" href="Web Technology/MYSQL.html" target="_blank">MYSQL</a>
+          <a class="dropdown-item" href="Trending Technology/AI.html" target="_blank">Artificial Intelligence</a>
+          <a class="dropdown-item" href="Trending Technology/ML.html" target="_blank">Machine Learning</a>
+          <a class="dropdown-item" href="Trending Technology/BlockChain.html" target="_blank">Blockchain Technology</a>
+          <a class="dropdown-item" href="Trending Technology/DataScience.html" target="_blank">Data Science</a>
+        </div>
+      </li>
+      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+      <li class="nav-item">
+        <!-- <a class="nav-link" href="#myModal"><b>Log In / SignUp</b></a> -->
+        <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#myModal">
+            Log In / SignUp
+          </button>
+  <!-- The Modal -->
+  <div class="modal" id="myModal">
+    <div class="modal-dialog">
+      <div class="modal-content">
+
+        <!-- Modal Header -->
+        <div class="modal-header">
+          <h4 class="modal-title">Login / Sign up here</h4>
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+        </div>
+
+        <!-- Modal body -->
+        <div class="modal-body">
+          <div class="container">
+  <!-- <h2>Login Form</h2> -->
+  <form method="post" action="/checklogin1.php" target="checklogin1.php">
+    <div class="form-group">
+      <label for="email"><b>Email:</b></label>
+      <input type="email" class="form-control" id="email" placeholder="Enter email" name="email">
+    </div>
+    <div class="form-group">
+      <label for="pwd"><b>Password:</b></label>
+      <input type="password" class="form-control" id="pwd" placeholder="Enter password" name="password">
+    </div>
+    <div class="form-group form-check">
+      <label class="form-check-label">
+        <input class="form-check-input" type="checkbox" name="remember"> Remember me
+      </label>
+    </div>
+    <button type="submit" name="submit" class="btn btn-primary">Submit</button>
+  </form>
+</div>
+
+        </div>
+
+        <!-- Modal footer -->
+        <div class="modal-footer">
+          <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+        </div>
+
+        <!--back space -->
+      </li>
+    </ul>
+  </nav>
+
+  <!--slider in Bootstrap -->
+  <div id="demo" class="carousel slide" data-ride="carousel">
+
+  <!-- Indicators -->
+  <ul class="carousel-indicators">
+    <li data-target="#demo" data-slide-to="0" class="active"></li>
+    <li data-target="#demo" data-slide-to="1"></li>
+    <li data-target="#demo" data-slide-to="2"></li>
+  </ul>
+
+  <!-- The slideshow -->
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+      <img src="images/slider2.jpg" alt="Free Education" width="1100" height="500">
+    </div>
+    <div class="carousel-item">
+      <img src="images/slider1.jpg" alt="Free Education" width="1100" height="500">
+    </div>
+    <div class="carousel-item">
+      <img src="images/slider3.jpg" alt="Free Education" width="1100" height="500">
+    </div>
+  </div>
+
+  <!-- Left and right controls -->
+  <a class="carousel-control-prev" href="#demo" data-slide="prev">
+    <span class="carousel-control-prev-icon"></span>
+  </a>
+  <a class="carousel-control-next" href="#demo" data-slide="next">
+    <span class="carousel-control-next-icon"></span>
+  </a>
+</div>
+<br>
+
+<div id="accordion">
+    <div class="card">
+      <div class="card-header">
+        <a class="card-link" data-toggle="collapse" href="#collapseOne">
+          <p class="bg-info text-white">&nbsp;&nbsp;&nbsp;Programming Languages</p>
+        </a>
+      </div>
+      <div id="collapseOne" class="collapse show" data-parent="#accordion">
+        <div class="card-body">
+          <div class="continer">
+            <div class="card-columns">
+
+    <div class="card bg-primary">
+      <div class="card-body text-center">
+        <p class="card-text"><a href="Programming Languages/C programming.html" target="_blank"><font color="black">C Programming</font></a></p>
+      </div>
+    </div> </a>
+    <div class="card bg-warning">
+      <div class="card-body text-center">
+        <p class="card-text"><a href="Programming Languages/C++ programming.html" target="_blank"><font color="black">C++ Programming</font></a></p>
+      </div>
+    </div>
+    <div class="card bg-success">
+      <div class="card-body text-center">
+        <p class="card-text"><a href="Programming Languages/JAVA.html" target="_blank"><font color="black">Java Programming</font></a></p>
+      </div>
+    </div>
+    <div class="card bg-danger">
+      <div class="card-body text-center">
+        <p class="card-text"><a href="Programming Languages/PYTHON.html" target="_blank"><font color="black">Python Programming</font></a></p>
+      </div>
+    </div>
+    <div class="card bg-light">
+      <div class="card-body text-center">
+        <p class="card-text"><a href="Programming Languages/DSA.html" target="_blank"><font color="black">Data Structure</font></a></p>
+      </div>
+    </div>
+    <div class="card bg-info">
+      <div class="card-body text-center">
+        <p class="card-text"><a href="Programming Languages/DBMS.html" target="_blank"><font color="black">DBMS</font></a></p>
+      </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  </div>
+    <div class="card">
+      <div class="card-header">
+        <a class="collapsed card-link" data-toggle="collapse" href="#collapseTwo">
+        <p class="bg-success text-white">&nbsp;&nbsp;&nbsp;Web Technologies</p>
+      </a>
+      </div>
+      <div id="collapseTwo" class="collapse" data-parent="#accordion">
+        <div class="card-body">
+          <div class="continer">
+            <div class="card-columns">
+    <div class="card bg-primary">
+      <div class="card-body text-center">
+        <p class="card-text"><a href="Web Technology/HTML.html" target="_blank"><font color="black">HTML</font><a></p>
+      </div>
+    </div>
+    <div class="card bg-warning">
+      <div class="card-body text-center">
+        <p class="card-text"><a href="Web Technology/CSS.html" target="_blank"><font color="black">CSS</font><a></p>
+      </div>
+    </div>
+    <div class="card bg-success">
+      <div class="card-body text-center">
+        <p class="card-text"><a href="Web Technology/JS.html" target="_blank"><font color="black">JavaScript</font><a></p>
+      </div>
+    </div>
+    <div class="card bg-danger">
+      <div class="card-body text-center">
+        <p class="card-text"><a href="Web Technology/BOOTSTRAP.html" target="_blank"><font color="black">Bootstrap</font><a></p>
+      </div>
+    </div>
+    <div class="card bg-light">
+      <div class="card-body text-center">
+        <p class="card-text"><a href="Web Technology/PHP.html" target="_blank"><font color="black">PHP</font><a></p>
+      </div>
+    </div>
+    <div class="card bg-info">
+      <div class="card-body text-center">
+        <p class="card-text"><a href="Web Technology/MYSQL.html" target="_blank"><font color="black">MYSQL</font><a></p>
+      </div>
+        </div>
+      </div>
+        </div>
+      </div>
+    </div>
+    <div class="card">
+      <div class="card-header">
+        <a class="collapsed card-link" data-toggle="collapse" href="#collapseThree">
+          <p class="bg-warning text-white">&nbsp;&nbsp;&nbsp;Trending Technologies</p>
+        </a>
+      </div>
+      <div id="collapseThree" class="collapse" data-parent="#accordion">
+        <div class="card-body">
+          <div class="continer">
+            <div class="card-columns">
+    <div class="card bg-primary">
+      <div class="card-body text-center">
+        <p class="card-text"><a href="Trending Technology/ML.html" target="_blank"><font color="black">Machine Learning</font></a></p>
+      </div>
+    </div>
+    <div class="card bg-warning">
+      <div class="card-body text-center">
+        <p class="card-text"><a href="Trending Technology/AI.html" target="_blank"><font color="black">Artificial Intelligence</font></a></p>
+      </div>
+    </div>
+    <div class="card bg-success">
+      <div class="card-body text-center">
+        <p class="card-text"><a href="Trending Technology/BlockChain.html" target="_blank"><font color="black">Blockchain Technology</font></a></p>
+      </div>
+    </div>
+    <div class="card bg-danger">
+      <div class="card-body text-center">
+        <p class="card-text"><a href="Trending Technology/DataScience.html" target="_blank"><font color="black">DataScience</font></a></p>
+      </div>
+    </div>
+    <div class="card bg-light">
+      <div class="card-body text-center">
+        <p class="card-text"><a href="Trending Technology/Deep Learning.html" target="_blank"><font color="black">Deep Learning</font></a></p>
+      </div>
+    </div>
+    <div class="card bg-info">
+      <div class="card-body text-center">
+        <p class="card-text"><a href="Trending Technology/BigData.html" target="_blank"><font color="black">Big Data</font></a></p>
+      </div>
+        </div>
+      </div>
+        </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!--tarif idhar aayega -->
+   <div class="container">
+     <div class="jumbotron">
+    <h3 align="center"><u>Benefits of Free Education For All</u>  </h3 > <br> <hr>
+      <p align="center"><img src="images/circle1.jpg"  width="250px" height="250px" class="rounded-circle" alt="Cinque Terre"></p>
+    <p align="center">This portal is maintained for learners who wants to learn beyond their limits</p> <br><hr>
+
+    <p align="center"><img src="images/circle2.jpg"  width="250px" height="250px" class="rounded-circle" alt="Cinque Terre"></p>
+  <p align="center">Best grade teachers are present inside for independent learners</p> <br> <hr>
+
+  <p align="center"><img src="images/circle3.jpg"  width="250px" height="250px" class="rounded-circle" alt="Cinque Terre"></p>
+<p align="center">Learn in your preferred language and pace</p>
+   </div>
+</div>
+<style>
+.q{
+  width: 100%;
+  height: 1000%;
+}
+</style>
+<div class="q">
+<div id="demo" class="carousel slide" data-ride="carousel">
+
+<!-- Indicators -->
+<ul class="carousel-indicators">
+  <li data-target="#demo" data-slide-to="0" class="active"></li>
+  <li data-target="#demo" data-slide-to="1"></li>
+  <li data-target="#demo" data-slide-to="2"></li>
+</ul>
+
+<!-- The slideshow -->
+<div class="carousel-inner">
+  <div class="carousel-item active">
+    <img src="images/quotes1.jpg" alt="Educational quotes" width="1100" height="100">
+  </div>
+  <div class="carousel-item">
+    <img src="images/quotes2.jpg" alt="Educational quotes" width="1100" height="100">
+  </div>
+  <div class="carousel-item">
+    <img src="images/quotes3.jpg" alt="Educational quotes" width="1100" height="100">
+  </div>
+</div>
+</div>
+</div>
+<!--footer   -->
+<!-- <style>
+.container{
+  font-family: sans-serif;
+  background-color: orangered;
+}
+</style>
+<div class="container">
+ <footer>
+ <hr>
+ <h6 align="left">
+  copyright &copy; VishalMourya All rights reserved
+</h6>
+<p align="center">
+Designed by <a href="http://www.vishalmourya.ml" target="_blank"> Vishal Mourya </a>
+</p>
+ </footer>
+</div> -->
+<style>
+.e{
+  background-color: #ccffff;
+}
+</style>
+<div class="e">
+<table class="table table-borderless">
+
+    <thead>
+      <tr>
+        <th>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;About Free Education For All</th>
+        <th>Quick Links</th>
+        <th>Contact us</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>Free Education For All portal is built to enhance the</td>
+        <td><a href="Programming Languages/JAVA.html" target="_blank"><font color="black">Programming Languages</font></a></td>
+        <td><a href="tel:8291391041"><font color="black">+91 8291391041</font></a></td>
+      </tr>
+      <tr>
+        <td> learning skills of students and to provide a platform for best,</td>
+        <td><a href="Web Technology/BOOTSTRAP.html" target="_blank"><font color="black">Web Technologies</font></a></td>
+        <td><a href="mailto:vishal.maurya2050@gmail.com"><font color="black">vishal.maurya2050@gmail.com</font></a></td>
+      </tr>
+      <tr>
+        <td>effective ,efficient and free learning anytime and anywhere</td>
+        <td><a href="Trending Technology/BlockChain.html" target="_blank"><font color="black">Ternding Technologies</font></a></td>
+        <td></td>
+      </tr>
+    </tbody>
+
+  </table>
+</div>
+  <footer>
+  <style>
+  .MyFooter{
+    background-color: orangered;
+    width: 100%;
+    height: 125px;
+    text-decoration: none;
+  }
+  </style>
+  <div class="MyFooter">
+    <br>
+  <h6 align="left">
+     &nbsp;&nbsp;&nbsp;Copyright &copy; VishalMourya </a> All rights reserved 2019
+ </h6>
+ <p align="right">
+   <b>Connect with us :<b>
+  <a href="https://www.facebook.com/" target="_blank"><i class="fa fa-facebook-official" style="font-size:30px;color:blue"></i></a>
+  <a href="https://twitter.com/" target="_blank""><i class="fa fa-twitter-square" style="font-size:30px;color:lightblue"></i></a>
+  <a href="https://wa.me/+918291391041" target="_blank"><i class="fa fa-whatsapp" style="font-size:30px;color:green"></i></a>
+  <a href="https://www.instagram.com/" target="_blank"><i class="fa fa-instagram" style="font-size:30px;color:pink"></i></a>
+  <a href="https://www.youtube.com/" target="_blank"><i class="fa fa-youtube" style="font-size:30px;color:black"></i></a>
+ &nbsp;&nbsp;&nbsp;</p>
+ <p align="center">
+ Designed by <a href="http://www.vishalmourya.ml" target="_blank"> <b>Vishal Mourya </b></a>
+ </p>
+</div>
+  </footer>
+</body>
+</html>

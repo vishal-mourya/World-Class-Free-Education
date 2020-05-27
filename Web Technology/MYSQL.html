@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Free Education</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+  <!-- for icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+ <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+ <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+ <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+ <style>
+   /* Make the image fully responsive */
+   .carousel-inner img {
+       width: 100%;
+       height: 400px;
+   }
+   </style>
+</head>
+<body>
+  <nav class="navbar navbar-expand-sm bg-dark navbar-dark">
+    <!-- Brand -->
+    <a class="navbar-brand" href="#">Free Education For All</a>
+
+    <!-- Links -->
+    <ul class="navbar-nav">
+      <li class="nav-item">
+        <a class="nav-link" href="header.html"><b>Home</b></a>
+      </li>
+      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+      <li class="nav-item">
+        <a class="nav-link" href="AboutUs.html"><b>About us</b></a>
+      </li>
+      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+      <!-- Dropdown -->
+      <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown">
+          Choose what you want to learn
+        </a>
+        <div class="dropdown-menu">
+          <a class="dropdown-item" href="#">C Programming</a>
+          <a class="dropdown-item" href="#">C++ Programming</a>
+          <a class="dropdown-item" href="#">Java Programming</a>
+          <a class="dropdown-item" href="#">Python Programming</a>
+          <a class="dropdown-item" href="#">HTML</a>
+          <a class="dropdown-item" href="#">CSS</a>
+          <a class="dropdown-item" href="#">JavaScript</a>
+          <a class="dropdown-item" href="#">PHP</a>
+          <a class="dropdown-item" href="#">MYSQL</a>
+          <a class="dropdown-item" href="#">Artificial Intelligence</a>
+          <a class="dropdown-item" href="#">Machine Learning</a>
+          <a class="dropdown-item" href="#">Blockchain Technology</a>
+          <a class="dropdown-item" href="#">Data Science</a>
+        </div>
+      </li>
+      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+      <li class="nav-item">
+        <!-- <a class="nav-link" href="#myModal"><b>Log In / SignUp</b></a> -->
+        <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#myModal">
+            Log In / SignUp
+          </button>
+  <!-- The Modal -->
+  <div class="modal" id="myModal">
+    <div class="modal-dialog">
+      <div class="modal-content">
+
+        <!-- Modal Header -->
+        <div class="modal-header">
+          <h4 class="modal-title">Login / Sign up here</h4>
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+        </div>
+
+        <!-- Modal body -->
+        <div class="modal-body">
+          <div class="container">
+  <!-- <h2>Login Form</h2> -->
+  <form action="/actionPage.php">
+    <div class="form-group">
+      <label for="email"><b>Email:</b></label>
+      <input type="email" class="form-control" id="email" placeholder="Enter email" name="email">
+    </div>
+    <div class="form-group">
+      <label for="pwd"><b>Password:</b></label>
+      <input type="password" class="form-control" id="pwd" placeholder="Enter password" name="pswd">
+    </div>
+    <div class="form-group form-check">
+      <label class="form-check-label">
+        <input class="form-check-input" type="checkbox" name="remember"> Remember me
+      </label>
+    </div>
+    <button type="submit" class="btn btn-primary">Submit</button>
+  </form>
+</div>
+
+        </div>
+
+        <!-- Modal footer -->
+        <div class="modal-footer">
+          <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+        </div>
+
+        <!--back space -->
+      </li>
+    </ul>
+  </nav>
+<!-- main page -->
+<div class="jumbotron jumbotron-fluid">
+<div class="container" align="left" width="50px" height="80px">
+<h5 align="left">Course Outline : The Compltete MySql guide</h5>
+<hr>
+<ul class="pagination">
+    <li class="page-item"><a class="page-link" href="#">Previous</a></li>
+    <li class="page-item"><a class="page-link" href="#">Module 1</a></li>
+    <li class="page-item"><a class="page-link" href="#">Module 2</a></li>
+    <li class="page-item"><a class="page-link" href="#">Module 3</a></li>
+    <li class="page-item"><a class="page-link" href="#">Module 4</a></li>
+    <li class="page-item"><a class="page-link" href="#">Module 5</a></li>
+    <li class="page-item"><a class="page-link" href="#">Module 6</a></li>
+    <li class="page-item"><a class="page-link" href="#">Module 7</a></li>
+    <li class="page-item"><a class="page-link" href="#">Module 8</a></li>
+    <li class="page-item"><a class="page-link" href="#">Module 9</a></li>
+    <li class="page-item"><a class="page-link" href="#">Module 10</a></li>
+    <li class="page-item"><a class="page-link" href="#">Next</a></li>
+  </ul>
+
+  <hr>
+  <p align="center">
+  <iframe width="800" height="500" src="https://www.youtube.com/embed/TwVkNgE2dOc?start=4" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+  </p>
+ <hr>
+ <h7>Concepts Covered : </h7>
+ <ul>
+   <li>Introduction to MySql</li>
+   <li>Basic concepts of MySql</li>
+ </ul>
+</div>
+</div>
+
+
+  <style>
+  .q{
+  width: 100%;
+  height: 100%;
+  }
+  </style>
+  <div class="q">
+  <div id="demo" class="carousel slide" data-ride="carousel">
+
+  <!-- Indicators -->
+  <ul class="carousel-indicators">
+  <li data-target="#demo" data-slide-to="0" class="active"></li>
+  <li data-target="#demo" data-slide-to="1"></li>
+  <li data-target="#demo" data-slide-to="2"></li>
+  </ul>
+
+  <!-- The slideshow -->
+  <div class="carousel-inner">
+  <div class="carousel-item active">
+    <img src="E:/Vicky/64 gb pendrive/vishal imp docs/PBL-Project/images/quotes1.jpg" alt="Educational quotes" width="1100" height="100">
+  </div>
+  <div class="carousel-item">
+    <img src="E:/Vicky/64 gb pendrive/vishal imp docs/PBL-Project/images/quotes2.jpg" alt="Educational quotes" width="1100" height="100">
+  </div>
+  <div class="carousel-item">
+    <img src="E:/Vicky/64 gb pendrive/vishal imp docs/PBL-Project/images/quotes3.jpg" alt="Educational quotes" width="1100" height="100">
+  </div>
+  </div>
+  </div>
+  </div>
+  <!--footer   -->
+  <!-- <style>
+  .container{
+  font-family: sans-serif;
+  background-color: orangered;
+  }
+  </style>
+  <div class="container">
+  <footer>
+  <hr>
+  <h6 align="left">
+  copyright &copy; VishalMourya All rights reserved
+  </h6>
+  <p align="center">
+  Designed by <a href="http://www.vishalmourya.ml" target="_blank"> Vishal Mourya </a>
+  </p>
+  </footer>
+  </div> -->
+  <style>
+  .e{
+    background-color: #ccffff;
+  }
+  </style>
+  <div class="e">
+  <table class="table table-borderless">
+
+      <thead>
+        <tr>
+          <th>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;About Free Education For All</th>
+          <th>Quick Links</th>
+          <th>Contact us</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Free Education For All portal is built to enhance the</td>
+          <td><a href="Programming Languages/JAVA.html" target="_blank"><font color="black">Programming Languages</font></a></td>
+          <td><a href="tel:8291391041"><font color="black">+91 8291391041</font></a></td>
+        </tr>
+        <tr>
+          <td> learning skills of students and to provide a platform for best,</td>
+          <td><a href="Web Technology/BOOTSTRAP.html" target="_blank"><font color="black">Web Technologies</font></a></td>
+          <td><a href="mailto:vishal.maurya2050@gmail.com"><font color="black">vishal.maurya2050@gmail.com</font></a></td>
+        </tr>
+        <tr>
+          <td>effective ,efficient and free learning anytime and anywhere</td>
+          <td><a href="Trending Technology/BlockChain.html" target="_blank"><font color="black">Ternding Technologies</font></a></td>
+          <td></td>
+        </tr>
+      </tbody>
+
+    </table>
+  </div>
+    <footer>
+    <style>
+    .MyFooter{
+      background-color: orangered;
+      width: 100%;
+      height: 125px;
+      text-decoration: none;
+    }
+    </style>
+    <div class="MyFooter">
+      <br>
+    <h6 align="left">
+       &nbsp;&nbsp;&nbsp;Copyright &copy; VishalMourya </a> All rights reserved 2019
+   </h6>
+   <p align="right">
+     <b>Connect with us :<b>
+       <a href="https://www.facebook.com/" target="_blank"><i class="fa fa-facebook-official" style="font-size:30px;color:blue"></i></a>
+       <a href="https://twitter.com/" target="_blank""><i class="fa fa-twitter-square" style="font-size:30px;color:lightblue"></i></a>
+       <a href="https://wa.me/+918291391041" target="_blank"><i class="fa fa-whatsapp" style="font-size:30px;color:green"></i></a>
+       <a href="https://www.instagram.com/" target="_blank"><i class="fa fa-instagram" style="font-size:30px;color:pink"></i></a>
+       <a href="https://www.youtube.com/" target="_blank"><i class="fa fa-youtube" style="font-size:30px;color:black"></i></a>
+      &nbsp;&nbsp;&nbsp;</p>
+   <p align="center">
+   Designed by <a href="http://www.vishalmourya.ml" target="_blank"> <b>Vishal Mourya </b></a>
+   </p>
+  </div>
+    </footer>
+  </body>
+  </html>
